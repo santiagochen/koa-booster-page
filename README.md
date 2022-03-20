@@ -1,159 +1,146 @@
-<p align="center">
-  <a href="https://getdoks.org/">
-    <img alt="Doks" src="https://doks.netlify.app/doks.svg" width="60">
-  </a>
-</p>
+# gatsby-gitbook-starter
 
-<h1 align="center">
-  Doks
-</h1>
+Kick off your project with this starter to create a powerful/flexible docs/tutorial web apps.
 
-<h3 align="center">
-  Modern Documentation Theme
-</h3>
+![gatsby-gitbook-starter](https://graphql-engine-cdn.hasura.io/learn-hasura/gatsby-gitbook-starter/assets/documentation_app_blog.png)
 
-<p align="center">
-  Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize.
-</p>
+## Motivation
 
-<p align="center">
-  <a href="https://github.com/h-enk/doks/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/h-enk/doks?style=flat-square" alt="GitHub">
-  </a>
-  <a href="https://github.com/h-enk/doks/releases">
-    <img src="https://img.shields.io/github/v/release/h-enk/doks?include_prereleases&style=flat-square"alt="GitHub release (latest SemVer including pre-releases)">
-  </a>
-  <a href="https://www.npmjs.com/package/@hyas/doks">
-    <img src="https://img.shields.io/npm/v/@hyas/doks?style=flat-square" alt="npm (scoped)">
-  </a>
-  <a href="https://github.com/h-enk/doks/actions?query=workflow%3A%22Hyas+CI%22">
-    <img src="https://img.shields.io/github/workflow/status/h-enk/doks/Hyas%20CI/master?style=flat-square" alt="GitHub Workflow Status (branch)">
-  </a>
-  <a href="https://app.netlify.com/sites/doks/deploys">
-    <img src="https://img.shields.io/netlify/8a1009d5-88ac-413e-96ef-3f928674a083?style=flat-square" alt="Netlify">
-  </a>
-</p>
+We wanted to create a [GraphQL tutorial](https://learn.hasura.io) series. The content would be written by developers for various languages/frameworks and what better than writing it in Markdown! And since this is a tutorial series we also needed rich embeds, syntax highlighting and more customisations.
 
-![Doks — Modern Documentation Theme](https://raw.githubusercontent.com/h-enk/doks/master/images/tn.png)
+We also wanted to serve these tutorials in sub paths of [learn.hasura.io](https://learn.hasura.io). To serve all these requirements, we decided to use Gatsby + MDX (Markdown + JSX) to extend markdown and used a neat consistent theme like the one at [GitBook](https://www.gitbook.com) and deployed as docker containers.
 
-## Demo
+## 🔥 Features
+- Write using Markdown / [MDX](https://github.com/mdx-js/mdx)
+- GitBook style theme
+- Syntax Highlighting using Prism [`Bonus`: Code diff highlighting]
+- Search Integration with Algolia
+- Progressive Web App, Works Offline
+- Google Analytics Integration
+- Automatically generated sidebar navigation, table of contents, previous/next
+- Dark Mode toggle
+- Edit on Github
+- Fully customisable
+- Rich embeds and live code editor using MDX
+- Easy deployment: Deploy on Netlify / Now.sh / Docker
 
-- [doks.netlify.app](https://doks.netlify.app/)
+## 🔗 Live Demo
 
-## Why Doks?
+Here's a [live demo](https://learn.hasura.io/graphql/react)
 
-Nine main reasons why you should use Doks:
+## 🚀 Quickstart
 
-1. __Security aware__. Get A+ scores on [Mozilla Observatory](https://observatory.mozilla.org/analyze/doks.netlify.app) out of the box. Easily change the default Security Headers to suit your needs.
+Get started by running the following commands:
 
-2. __Fast by default__. Get 100 scores on [Google Lighthouse](https://googlechrome.github.io/lighthouse/viewer/?gist=7731347bb8ce999eff7428a8e763b637) by default. Doks removes unused css, prefetches links, and lazy loads images.
-
-3. __SEO-ready__. Use sensible defaults for structured data, open graph, and Twitter cards. Or easily change the SEO settings to your liking.
-
-4. __Development tools__. Code with confidence. Check styles, scripts, and markdown for errors and fix automatically or manually.
-
-5. __Bootstrap framework__. Build robust, flexible, and intuitive websites with Bootstrap 5. Easily customize your Doks site with the source Sass files.
-
-6. __Netlify-ready__. Deploy to Netlify with sensible defaults. Easily use Netlify Functions, Netlify Redirects, and Netlify Headers.
-
-7. __Full text search__. Search your Doks site with FlexSearch. Easily customize index settings and search options to your liking.
-
-8. __Page layouts__. Build pages with a landing page, blog, or documentation layout. Add custom sections and components to suit your needs.
-
-9. __Dark mode__. Switch to a low-light UI with the click of a button. Change colors with variables to match your branding.
-
-### Other features
-
-- __Multilingual and i18n__ support
-- __Versioning__ documentation support
-- __KaTeX__ math typesetting
-- __Mermaid__ diagrams and visualization
-- __highlight.js__ syntax highlighting
-
-## Requirements
-
-- [Git](https://git-scm.com/) — latest source release
-- [Node.js](https://nodejs.org/) — latest LTS version or newer
-
-<details>
-<summary>Why Node.js?</summary>
-
-Doks uses npm (included with Node.js) to centralize dependency management, making it [easy to update](https://getdoks.org/docs/help/how-to-update/) resources, build tooling, plugins, and build scripts.
-
-</details>
-
-## Get started
-
-Start a new Doks project in three steps:
-
-### 1. Create a new site
-
-Doks is available as a child theme and a starter theme.
-
-#### Child theme
-
-- Intended for novice to intermediate users
-- Intended for minor customizations
-- [Easily update npm packages](https://getdoks.org/docs/help/how-to-update/) — __including__ [Doks](https://www.npmjs.com/package/@hyas/doks)
-
-```bash
-git clone https://github.com/h-enk/doks-child-theme.git my-doks-site && cd my-doks-site
+```
+$ git clone git@github.com:hasura/gatsby-gitbook-starter.git
+$ cd gatsby-gitbook-starter
+$ npm install
+$ npm start
 ```
 
-#### Starter theme
+Visit `http://localhost:8000/` to view the app.
 
-- Intended for intermediate to advanced users
-- Intended for major customizations
-- [Easily update npm packages](https://getdoks.org/docs/help/how-to-update/)
+## 🔧 Configure
 
-```bash
-git clone https://github.com/h-enk/doks.git my-doks-site && cd my-doks-site
+Write markdown files in `content` folder.
+
+Open `config.js` for templating variables. Broadly configuration is available for `gatsby`, `header`, `sidebar` and `siteMetadata`.
+
+- `gatsby` config for global configuration like 
+    - `pathPrefix` - Gatsby Path Prefix
+    - `siteUrl` - Gatsby Site URL
+    - `gaTrackingId` - Google Analytics Tracking ID
+
+- `header` config for site header configuration like
+    - `title` - The title that appears on the top left
+    - `githubUrl` - The Github URL for the docs website
+    - `helpUrl` - Help URL for pointing to resources
+    - `tweetText` - Tweet text
+    - `links` - Links on the top right
+    - `search` - Enable search and [configure Algolia](https://www.gatsbyjs.org/docs/adding-search-with-algolia/)
+
+- `sidebar` config for navigation links configuration
+    - `forcedNavOrder` for left sidebar navigation order. It should be in the format "/\<filename>"
+    - `frontLine` - whether to show a front line at the beginning of a nested menu.(Collapsing capability would be turned of if this option is set to true)
+    - `links` - Links on the bottom left of the sidebar
+    - `ignoreIndex` - Set this to true if the index.md file shouldn't appear on the left sidebar navigation. Typically this can be used for landing pages.
+
+- `siteMetadata` config for website related configuration
+    - `title` - Title of the website
+    - `description` - Description of the website
+    - `ogImage` - Social Media share og:image tag
+    - `docsLocation` - The Github URL for Edit on Github
+
+- For sub nesting in left sidebar, create a folder with the same name as the top level `.md` filename and the sub navigation is auto-generated. The sub navigation is alphabetically ordered.
+
+### Algolia Configuration
+
+To setup Algolia, go to `config.js` and update the `search` object to look like the one below:
+
+```...,
+	"search": {
+		"enabled": true,
+		"indexName": "MY_INDEX_NAME",
+		"algoliaAppId": process.env.GATSBY_ALGOLIA_APP_ID,
+		"algoliaSearchKey": process.env.GATSBY_ALGOLIA_SEARCH_KEY,
+		"algoliaAdminKey": process.env.ALGOLIA_ADMIN_KEY
+	},
 ```
 
-<details>
-<summary>Help me choose</summary>
+Values for Algolia App ID, Search Key, and Admin Key can be obtained from Algolia Dashboard with the right set of permissions. Replace `MY_INDEX_NAME` with the Algolia Index name of your choice. To build the Algolia index, you need to run `npm run build` which will do a gatsby build along with content indexing in Algolia.
 
-Not sure which one is for you? Pick the child theme.
+### Progressive Web App, Offline
 
-</details>
+To enable PWA, go to `config.js` and update the `pwa` object to look like the one below:
 
-### 2. Install dependencies
-
-```bash
-npm install
+```
+   "pwa": {
+        "enabled": false, // disabling this will also remove the existing service worker.
+        "manifest": {
+            "name": "Gatsby Gitbook Starter",
+            "short_name": "GitbookStarter",
+            "start_url": "/",
+            "background_color": "#6b37bf",
+            "theme_color": "#6b37bf",
+            "display": "standalone",
+            "crossOrigin": "use-credentials",
+            icons: [
+                {
+                    src: "src/pwa-512.png",
+                    sizes: `512x512`,
+                    type: `image/png`,
+                },
+            ],
+        },
+    }
 ```
 
-### 3. Start development server
+## Live Code Editor
 
-```bash
-npm run start
+To render react components for live editing, add the `react-live=true` to the code section. For example:
+
+```javascript react-live=true
+<button>Edit my text</button>
 ```
 
-## Other commands
+In the above code, just add `javascript react-live=true` after the triple quote ``` to start rendering react components that can be edited by users.
 
-Doks comes with [commands](https://getdoks.org/docs/prologue/commands/) for common tasks.
+## 🤖 SEO friendly
 
-## Documentation
+This is a static site and comes with all the SEO benefits. Configure meta tags like title and description for each markdown file using MDX Frontmatter
 
-- [Netlify](https://docs.netlify.com/)
-- [Hugo](https://gohugo.io/documentation/)
-- [Doks](https://getdoks.org/)
+```markdown
+---
+title: "Title of the page"
+metaTitle: "Meta Title Tag for this page"
+metaDescription: "Meta Description Tag for this page"
+---
+```
 
-## Communities
+Canonical URLs are generated automatically.
 
-- [Netlify Community](https://community.netlify.com/)
-- [Hugo Forums](https://discourse.gohugo.io/)
-- [Doks Discussions](https://github.com/h-enk/doks/discussions)
+## ☁️ Deploy
 
-## Sponsors
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/hasura/gatsby-gitbook-starter)
 
-Support this project by becoming a sponsor. Your logo will show up here with a link to your website.
-
-[![OC sponsor 0](https://opencollective.com/doks/tiers/sponsor/0/avatar.svg)](https://opencollective.com/doks/tiers/sponsor/0/website)
-[![OC sponsor 1](https://opencollective.com/doks/tiers/sponsor/1/avatar.svg)](https://opencollective.com/doks/tiers/sponsor/1/website)
-
-## Backers
-
-Support this project by becoming a backer. Your avatar will show up here.
-
-[![Backers](https://opencollective.com/doks/tiers/backer.svg)](https://opencollective.com/doks)
