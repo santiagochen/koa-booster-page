@@ -1,84 +1,0 @@
-ÿo"
-components;";/usr/local/app/other/koa-booster-page/src/templates/docs.jso"componentPath";/usr/local/app/other/koa-booster-page/src/templates/docs.js"componentChunkName"!component---src-templates-docs-js"query"ÿquery usrlocalappotherkoaBoosterPagesrctemplatesdocsJs3110060872($id: String!) {
-  site {
-    siteMetadata {
-      title
-      docsLocation
-    }
-  }
-  mdx(fields: {id: {eq: $id}}) {
-    fields {
-      id
-      title
-      slug
-    }
-    body
-    tableOfContents
-    parent {
-      ... on File {
-        relativePath
-      }
-    }
-    frontmatter {
-      metaTitle
-      metaDescription
-    }
-  }
-  allMdx {
-    edges {
-      node {
-        fields {
-          slug
-          title
-        }
-      }
-    }
-  }
-}
-"pages'"/"
-/codeblock"/introduction"/codeblock/1-index,"isInBootstrapT"
-serverDataF{:"staticQueryComponents;"sq--src-components-header-jso"name"headerTitleQuery"componentPath">/usr/local/app/other/koa-booster-page/src/components/Header.js"id"sq--src-components-header-js"query"çquery headerTitleQuery {
-  site {
-    siteMetadata {
-      headerTitle
-      githubUrl
-      helpUrl
-      tweetText
-      logo {
-        link
-        image
-      }
-      headerLinks {
-        link
-        text
-      }
-    }
-  }
-}
-"hash"	417421954{"#sq--src-components-right-sidebar-jso"name"CusrlocalappotherkoaBoosterPagesrccomponentsrightSidebarJs3706406642"componentPath"D/usr/local/app/other/koa-booster-page/src/components/rightSidebar.js"id"#sq--src-components-right-sidebar-js"query"Æquery usrlocalappotherkoaBoosterPagesrccomponentsrightSidebarJs3706406642 {
-  allMdx {
-    edges {
-      node {
-        fields {
-          slug
-        }
-        tableOfContents
-      }
-    }
-  }
-}
-"hash"
-3706406642{"#sq--src-components-sidebar-index-jso"name"CusrlocalappotherkoaBoosterPagesrccomponentssidebarindexJs2619113677"componentPath"E/usr/local/app/other/koa-booster-page/src/components/sidebar/index.js"id"#sq--src-components-sidebar-index-js"query"¾query usrlocalappotherkoaBoosterPagesrccomponentssidebarindexJs2619113677 {
-  allMdx {
-    edges {
-      node {
-        fields {
-          slug
-          title
-        }
-      }
-    }
-  }
-}
-"hash"
-2619113677{:{
