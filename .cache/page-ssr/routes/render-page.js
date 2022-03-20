@@ -20872,7 +20872,7 @@ module.exports = [];
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"data":{"allMdx":{"edges":[{"node":{"fields":{"slug":"/codeblock","title":"Syntax Highlighting"}}},{"node":{"fields":{"slug":"/","title":"Landing Page"}}},{"node":{"fields":{"slug":"/codeblock/1-index","title":"Sub Page"}}},{"node":{"fields":{"slug":"/introduction","title":"Introduction"}}}]}}}');
+module.exports = JSON.parse('{"data":{"allMdx":{"edges":[{"node":{"fields":{"slug":"/codeblock","title":"Syntax Highlighting"}}},{"node":{"fields":{"slug":"/","title":"Landing Page"}}},{"node":{"fields":{"slug":"/codeblock/1-index","title":"Sub Page"}}},{"node":{"fields":{"slug":"/语法","title":"Syntax Highlighting"}}}]}}}');
 
 /***/ }),
 
@@ -20883,7 +20883,7 @@ module.exports = JSON.parse('{"data":{"allMdx":{"edges":[{"node":{"fields":{"slu
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"data":{"allMdx":{"edges":[{"node":{"fields":{"slug":"/codeblock"},"tableOfContents":{"items":[{"url":"#live-editing-example","title":"Live Editing example"}]}}},{"node":{"fields":{"slug":"/"},"tableOfContents":{"items":[{"url":"#heading-h1","title":"Heading H1","items":[{"url":"#heading-h2","title":"Heading H2","items":[{"url":"#heading-h3","title":"Heading H3","items":[{"url":"#heading-h4","title":"Heading H4","items":[{"url":"#heading-h5","title":"Heading H5","items":[{"url":"#heading-h6","title":"Heading H6"}]}]}]}]},{"url":"#lists","title":"Lists"},{"url":"#links","title":"Links"}]}]}}},{"node":{"fields":{"slug":"/codeblock/1-index"},"tableOfContents":{"items":[{"url":"#live-editing-example","title":"Live Editing example"}]}}},{"node":{"fields":{"slug":"/introduction"},"tableOfContents":{"items":[{"url":"#heading-h1","title":"Heading H1","items":[{"url":"#heading-h2","title":"Heading H2","items":[{"url":"#heading-h3","title":"Heading H3","items":[{"url":"#heading-h4","title":"Heading H4","items":[{"url":"#heading-h5","title":"Heading H5","items":[{"url":"#heading-h6","title":"Heading H6"}]}]}]}]},{"url":"#lists","title":"Lists"},{"url":"#links","title":"Links"}]}]}}}]}}}');
+module.exports = JSON.parse('{"data":{"allMdx":{"edges":[{"node":{"fields":{"slug":"/codeblock"},"tableOfContents":{"items":[{"url":"#live-editing-example","title":"Live Editing example"}]}}},{"node":{"fields":{"slug":"/"},"tableOfContents":{"items":[{"url":"#heading-h1","title":"Heading H1","items":[{"url":"#heading-h2","title":"Heading H2","items":[{"url":"#heading-h3","title":"Heading H3","items":[{"url":"#heading-h4","title":"Heading H4","items":[{"url":"#heading-h5","title":"Heading H5","items":[{"url":"#heading-h6","title":"Heading H6"}]}]}]}]},{"url":"#lists","title":"Lists"},{"url":"#links","title":"Links"}]}]}}},{"node":{"fields":{"slug":"/codeblock/1-index"},"tableOfContents":{"items":[{"url":"#live-editing-example","title":"Live Editing example"}]}}},{"node":{"fields":{"slug":"/语法"},"tableOfContents":{"items":[{"url":"#koa-booster","title":"koa-booster"}]}}}]}}}');
 
 /***/ }),
 
