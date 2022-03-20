@@ -1,6 +1,12 @@
-import * as React from 'react';
+import * as React from "react";
 
-const CommunityAuthor = ({ name, imageUrl, twitterUrl, githubUrl, description }) => {
+const CommunityAuthor = ({
+  name,
+  imageUrl,
+  twitterUrl,
+  githubUrl,
+  description,
+}) => {
   return (
     <>
       <h2 className="communitySection">About the community author</h2>

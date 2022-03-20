@@ -1,7 +1,7 @@
-import * as React from 'react';
-import Link from './link';
+import * as React from "react";
+import Link from "./link";
 
-import { StyledNextPrevious } from './styles/PageNavigationButtons';
+import { StyledNextPrevious } from "./styles/PageNavigationButtons";
 
 const NextPrevious = ({ mdx, nav }) => {
   let currentIndex;
@@ -36,7 +36,9 @@ const NextPrevious = ({ mdx, nav }) => {
     nextInfo.url = null;
     nextInfo.title = null;
     previousInfo.url = nav[currentIndex - 1] ? nav[currentIndex - 1].url : null;
-    previousInfo.title = nav[currentIndex - 1] ? nav[currentIndex - 1].title : null;
+    previousInfo.title = nav[currentIndex - 1]
+      ? nav[currentIndex - 1].title
+      : null;
   } else if (currentIndex) {
     // any other page
     nextInfo.url = nav[currentIndex + 1].url;
@@ -50,8 +52,8 @@ const NextPrevious = ({ mdx, nav }) => {
   return (
     <StyledNextPrevious>
       {previousInfo.url && currentIndex >= 0 ? (
-        <Link to={nav[currentIndex - 1].url} className={'previousBtn'}>
-          <div className={'leftArrow'}>
+        <Link to={nav[currentIndex - 1].url} className={"previousBtn"}>
+          <div className={"leftArrow"}>
             <svg
               preserveAspectRatio="xMidYMid meet"
               height="1em"
@@ -71,27 +73,29 @@ const NextPrevious = ({ mdx, nav }) => {
               </g>
             </svg>
           </div>
-          <div className={'preRightWrapper'}>
-            <div className={'smallContent'}>
+          <div className={"preRightWrapper"}>
+            <div className={"smallContent"}>
               <span>Previous</span>
             </div>
-            <div className={'nextPreviousTitle'}>
+            <div className={"nextPreviousTitle"}>
               <span>{nav[currentIndex - 1].title}</span>
             </div>
           </div>
         </Link>
       ) : null}
       {nextInfo.url && currentIndex >= 0 ? (
-        <Link to={nav[currentIndex + 1].url} className={'nextBtn'}>
-          <div className={'nextRightWrapper'}>
-            <div className={'smallContent'}>
+        <Link to={nav[currentIndex + 1].url} className={"nextBtn"}>
+          <div className={"nextRightWrapper"}>
+            <div className={"smallContent"}>
               <span>Next</span>
             </div>
-            <div className={'nextPreviousTitle'}>
-              <span>{nav[currentIndex + 1] && nav[currentIndex + 1].title}</span>
+            <div className={"nextPreviousTitle"}>
+              <span>
+                {nav[currentIndex + 1] && nav[currentIndex + 1].title}
+              </span>
             </div>
           </div>
-          <div className={'rightArrow'}>
+          <div className={"rightArrow"}>
             <svg
               preserveAspectRatio="xMidYMid meet"
               height="1em"

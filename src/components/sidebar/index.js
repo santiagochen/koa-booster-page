@@ -1,9 +1,9 @@
-import * as React from 'react';
-import Tree from './tree';
-import { StaticQuery, graphql } from 'gatsby';
-import styled from '@emotion/styled';
-import { ExternalLink } from 'react-feather';
-import config from '../../../config';
+import * as React from "react";
+import Tree from "./tree";
+import { StaticQuery, graphql } from "gatsby";
+import styled from "@emotion/styled";
+import { ExternalLink } from "react-feather";
+import config from "../../../config";
 
 // eslint-disable-next-line no-unused-vars
 const ListItem = styled(({ className, active, level, ...props }) => {
@@ -45,7 +45,7 @@ const ListItem = styled(({ className, active, level, ...props }) => {
   }
 `;
 
-const Sidebar = styled('aside')`
+const Sidebar = styled("aside")`
   width: 100%;
   height: 100vh;
   overflow: auto;
@@ -111,15 +111,17 @@ const SidebarLayout = ({ location }) => (
         <Sidebar>
           {config.sidebar.title ? (
             <div
-              className={'sidebarTitle hiddenMobile'}
+              className={"sidebarTitle hiddenMobile"}
               dangerouslySetInnerHTML={{ __html: config.sidebar.title }}
             />
           ) : null}
-          <ul className={'sideBarUL'}>
+          <ul className={"sideBarUL"}>
             <Tree edges={allMdx.edges} />
-            {config.sidebar.links && config.sidebar.links.length > 0 && <Divider />}
+            {config.sidebar.links && config.sidebar.links.length > 0 && (
+              <Divider />
+            )}
             {config.sidebar.links.map((link, key) => {
-              if (link.link !== '' && link.text !== '') {
+              if (link.link !== "" && link.text !== "") {
                 return (
                   <ListItem key={key} to={link.link}>
                     {link.text}

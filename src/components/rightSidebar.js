@@ -1,9 +1,9 @@
-import * as React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
+import * as React from "react";
+import { StaticQuery, graphql } from "gatsby";
 
 // import Link from './link';
-import config from '../../config';
-import { Sidebar, ListItem } from './styles/Sidebar';
+import config from "../../config";
+import { Sidebar, ListItem } from "./styles/Sidebar";
 
 const SidebarLayout = ({ location }) => (
   <StaticQuery
@@ -33,20 +33,23 @@ const SidebarLayout = ({ location }) => (
           if (item !== undefined) {
             if (
               item.node.fields.slug === location.pathname ||
-              config.gatsby.pathPrefix + item.node.fields.slug === location.pathname
+              config.gatsby.pathPrefix + item.node.fields.slug ===
+                location.pathname
             ) {
               if (item.node.tableOfContents.items) {
-                innerItems = item.node.tableOfContents.items.map((innerItem, index) => {
-                  const itemId = innerItem.title
-                    ? innerItem.title.replace(/\s+/g, '').toLowerCase()
-                    : '#';
+                innerItems = item.node.tableOfContents.items.map(
+                  (innerItem, index) => {
+                    const itemId = innerItem.title
+                      ? innerItem.title.replace(/\s+/g, "").toLowerCase()
+                      : "#";
 
-                  return (
-                    <ListItem key={index} to={`#${itemId}`} level={1}>
-                      {innerItem.title}
-                    </ListItem>
-                  );
-                });
+                    return (
+                      <ListItem key={index} to={`#${itemId}`} level={1}>
+                        {innerItem.title}
+                      </ListItem>
+                    );
+                  }
+                );
               }
             }
           }
@@ -59,8 +62,8 @@ const SidebarLayout = ({ location }) => (
       if (finalNavItems && finalNavItems.length) {
         return (
           <Sidebar>
-            <ul className={'rightSideBarUL'}>
-              <li className={'rightSideTitle'}>CONTENTS</li>
+            <ul className={"rightSideBarUL"}>
+              <li className={"rightSideTitle"}>CONTENTS</li>
               {finalNavItems}
             </ul>
           </Sidebar>

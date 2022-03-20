@@ -1,14 +1,14 @@
-import * as React from 'react';
-import styled from '@emotion/styled';
-import { MDXProvider } from '@mdx-js/react';
+import * as React from "react";
+import styled from "@emotion/styled";
+import { MDXProvider } from "@mdx-js/react";
 
-import ThemeProvider from './theme/themeProvider';
-import mdxComponents from './mdxComponents';
-import Sidebar from './sidebar';
-import RightSidebar from './rightSidebar';
-import config from '../../config.js';
+import ThemeProvider from "./theme/themeProvider";
+import mdxComponents from "./mdxComponents";
+import Sidebar from "./sidebar";
+import RightSidebar from "./rightSidebar";
+import config from "../../config.js";
 
-const Wrapper = styled('div')`
+const Wrapper = styled("div")`
   display: flex;
   justify-content: space-between;
   background: ${({ theme }) => theme.colors.background};
@@ -29,7 +29,7 @@ const Wrapper = styled('div')`
   }
 `;
 
-const Content = styled('main')`
+const Content = styled("main")`
   display: flex;
   flex-grow: 1;
   margin: 0px 88px;
@@ -47,18 +47,18 @@ const Content = styled('main')`
   }
 `;
 
-const MaxWidth = styled('div')`
+const MaxWidth = styled("div")`
   @media only screen and (max-width: 50rem) {
     width: 100%;
     position: relative;
   }
 `;
 
-const LeftSideBarWidth = styled('div')`
+const LeftSideBarWidth = styled("div")`
   width: 298px;
 `;
 
-const RightSideBarWidth = styled('div')`
+const RightSideBarWidth = styled("div")`
   width: 224px;
 `;
 
@@ -66,19 +66,19 @@ const Layout = ({ children, location }) => (
   <ThemeProvider location={location}>
     <MDXProvider components={mdxComponents}>
       <Wrapper>
-        <LeftSideBarWidth className={'hiddenMobile'}>
+        <LeftSideBarWidth className={"hiddenMobile"}>
           <Sidebar location={location} />
         </LeftSideBarWidth>
         {config.sidebar.title ? (
           <div
-            className={'sidebarTitle sideBarShow'}
+            className={"sidebarTitle sideBarShow"}
             dangerouslySetInnerHTML={{ __html: config.sidebar.title }}
           />
         ) : null}
         <Content>
           <MaxWidth>{children}</MaxWidth>
         </Content>
-        <RightSideBarWidth className={'hiddenMobile'}>
+        <RightSideBarWidth className={"hiddenMobile"}>
           <RightSidebar location={location} />
         </RightSideBarWidth>
       </Wrapper>

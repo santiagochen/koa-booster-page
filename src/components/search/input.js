@@ -1,9 +1,9 @@
-import * as React from 'react';
-import { connectSearchBox } from 'react-instantsearch-dom';
+import * as React from "react";
+import { connectSearchBox } from "react-instantsearch-dom";
 
-import styled from '@emotion/styled';
-import { css } from '@emotion/react';
-import { Search } from '@styled-icons/fa-solid/Search';
+import styled from "@emotion/styled";
+import { css } from "@emotion/react";
+import { Search } from "@styled-icons/fa-solid/Search";
 
 const SearchIcon = styled(Search)`
   width: 1em;
@@ -79,10 +79,10 @@ export default connectSearchBox(({ refine, ...rest }) => {
   };
 
   return (
-    <Form className={'formElement'} onSubmit={preventSubmit}>
+    <Form className={"formElement"} onSubmit={preventSubmit}>
       <SearchIcon />
       <Input
-        className={'searchInput '}
+        className={"searchInput "}
         type="text"
         placeholder="Search"
         aria-label="Search"

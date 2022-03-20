@@ -1,10 +1,10 @@
-import * as React from 'react';
-import styled from '@emotion/styled';
+import * as React from "react";
+import styled from "@emotion/styled";
 
-import NightImage from './images/night.png';
-import DayImage from './images/day.png';
+import NightImage from "./images/night.png";
+import DayImage from "./images/day.png";
 
-const StyledSwitch = styled('div')`
+const StyledSwitch = styled("div")`
   display: flex;
   justify-content: flex-end;
   width: 100%;
@@ -40,7 +40,7 @@ const StyledSwitch = styled('div')`
 
   .slider:before {
     position: absolute;
-    content: '';
+    content: "";
     height: 30px;
     width: 30px;
     left: 0px;
