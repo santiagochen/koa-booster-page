@@ -1,1 +1,1 @@
-{"data":{"allMdx":{"edges":[{"node":{"fields":{"slug":"/","title":"Landing Page"}}},{"node":{"fields":{"slug":"/前言","title":"优雅的实现nodejs"}}},{"node":{"fields":{"slug":"/语法","title":"koa-booster语法"}}},{"node":{"fields":{"slug":"/koa-booster-cli","title":"koa-booster-cli使用"}}}]}}}
+{"data":{"allMdx":{"edges":[{"node":{"fields":{"slug":"/","title":"Landing Page"}}},{"node":{"fields":{"slug":"/语法","title":"koa-booster语法"}}},{"node":{"fields":{"slug":"/koa-booster-cli","title":"koa-booster-cli使用"}}},{"node":{"fields":{"slug":"/优雅的实现nodejs","title":"优雅的实现nodejs"}}}]}}}
